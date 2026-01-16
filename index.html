@@ -1,61 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav-container">
-            <!-- Logo -->
-            <div class="logo">KaeruShi</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="btn-resume">Resume</button>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaeruShi Portofolio</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+  </head>
+
+  <body class="bg-background text-primary font-sans">
+    <header>
+      <nav class="flex w-full justify-between fixed px-6 py-6 backdrop-blur-xl">
+        <!-- Logo -->
+        <div class="flex self-center font-bold text-xl">KaeruShi</div>
+        <ul
+          class="flex gap-8 self-center *:text-[1.1rem] *:text-white *:transition-[color,filter] *:duration-200 *:hover:text-accent *:hover:filter-[drop-shadow(0_0_18px_var(--color-accent))]"
+        >
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="px-4 py-3 leading-none bg-[linear-gradient(to_right,#D86983,#7E57C2)] rounded-full font-bold transition duration-300 hover:scale-110"
+        >
+          Resume
+        </button>
+      </nav>
     </header>
+
     <main>
-        <!-- Home -->
-        <section class="home-section">
-            <h2>Hello, I'm<br><span>Dzikri Farrel Ardiansyah</span></h2>
-            <p>I'm a passionate developer with experience in android & web development, always eager to learn new technologies and improve my skills.</p>
-            <div class="two-buttons">
-                <button class="btn-projects">View Projects</button>
-                <button class="btn-hire">Hire Me</button>
+      <!-- Home -->
+      <section class="min-h-screen px-14 flex flex-col justify-center">
+        <h2 class="text-6xl font-black">
+          Hello, I'm<br /><span class="text-accent"
+            >Dzikri Farrel Ardiansyah</span
+          >
+        </h2>
+        <p class="pt-3 w-[50%] text-gray-300">
+          I'm a passionate developer with experience in android & web
+          development, always eager to learn new technologies and improve my
+          skills.
+        </p>
+        <div
+          class="pt-5 flex gap-3 *:rounded-full *:px-3.5 *:py-2.5 *:border *:transition *:duration-300 *:hover:bg-accent *:hover:text-black"
+        >
+          <button class="bg-white font-semibold text-black hover:scale-105">
+            View Projects
+          </button>
+          <button class="text-white hover:scale-110">Hire Me</button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="min-h-screen flex flex-col items-center">
+        <h2 class="text-4xl font-black">About Me</h2>
+        <div class="flex mt-6 items-start gap-6 lg:w-[60%] md:w-[80%]">
+          <div class="w-[220px] shrink-0">
+            <img class="w-full" src="assets/img/avatar.png" alt="Avatar" />
+          </div>
+          <div class="ps-5">
+            <p
+              class="lg:text-xl md:text-lg rounded-2xl p-5 bg-container border-con_outline border"
+            >
+              Saya adalah individu yang memiliki ketertarikan pada teknologi
+              serta desain. Berpengalaman di bidang administrasi dan IT support,
+              terbiasa bekerja dengan data, sistem, dan visual. Memiliki
+              semangat belajar tinggi, bertanggung jawab, dan mampu bekerja
+              secara mandiri maupun dalam tim.
+            </p>
+            <div
+              class="flex gap-3 mt-5 *:lg:text-xl *:md:text-lg rounded-2xl p-5 bg-container border-con_outline border"
+            >
+              <h3>Interests</h3>
+              <div class="gap-line"></div>
+              <div class="gap-7 flex">
+                <span class="chip">Anime</span>
+                <span class="chip">Coding</span>
+                <span class="chip">Gaming</span>
+                <span class="chip">Design</span>
+              </div>
             </div>
-        </section>
-        <!-- About -->
-        <section class="about-section">
-            <h2>About Me</h2>
-            <div class="container-a">
-                <div class="avatar-card">
-                    <img src="assets/img/avatar.png" alt="Avatar">
-                </div>
-                <div class="right-col">
-                    <div class="card card-bio">
-                        <p>Saya adalah individu yang memiliki ketertarikan pada teknologi serta desain. Berpengalaman di bidang administrasi dan IT support, terbiasa bekerja dengan data, sistem, dan visual. Memiliki semangat belajar tinggi, bertanggung jawab, dan mampu bekerja secara mandiri maupun dalam tim.</div>
-                    <div class="card card-interests">
-                        <h3>Interests</h3>
-                        <div class="gap-line"></div>
-                        <div class="chips">
-                            <span class="chip">Anime</span>
-                            <span class="chip">Coding</span>
-                            <span class="chip">Gaming</span>
-                            <span class="chip">Design</span>
-                        </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Sample Page</p>
+      <p>&copy; 2024 My Sample Page</p>
     </footer>
-</body>
+  </body>
 </html>

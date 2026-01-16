@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "../**/*.{html,js,ts,jsx,tsx}";
+
+@theme {
+    --color-background: #171717;
+    --color-primary: #ffff;
+    --color-accent: #4EFF7E;
+    --color-container: #252525;
+    --color-con_outline: #4D4D4D;
+
+    --radius-container: 12px;
+    --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
