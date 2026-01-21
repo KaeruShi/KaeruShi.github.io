@@ -6,95 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KaeruShi Portofolio</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
   </head>
 
   <body class="bg-background text-primary font-sans">
     <header>
-      <nav class="flex w-full justify-between fixed px-6 py-6 backdrop-blur-xl">
+      <nav class="fixed flex w-full justify-between px-12 py-6 backdrop-blur-xl">
         <!-- Logo -->
-        <div class="flex self-center font-bold text-xl">KaeruShi</div>
-        <ul
-          class="flex gap-8 self-center *:text-[1.1rem] *:text-white *:transition-[color,filter] *:duration-200 *:hover:text-accent *:hover:filter-[drop-shadow(0_0_18px_var(--color-accent))]"
-        >
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about"> About </a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+        <div class="flex self-center text-xl font-bold">KaeruShi</div>
+        <ul class="*:hover:text-accent flex gap-8 self-center *:text-[1.1rem] *:text-white *:transition-all *:duration-300 *:hover:filter-[drop-shadow(0_0_18px_var(--color-accent))] *:hover:[-webkit-text-stroke:0.7px_currentColor]">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about"> About </a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <button
-          class="px-4 py-3 leading-none bg-[linear-gradient(to_right,#D86983,#7E57C2)] rounded-full font-bold transition duration-300 hover:scale-110"
-        >
-          Resume
-        </button>
+        <button class="rounded-full bg-[linear-gradient(to_right,#D86983,#7E57C2)] px-4 py-3 leading-none font-bold transition duration-300 hover:scale-110 active:scale-95">Resume</button>
       </nav>
     </header>
 
     <main>
       <!-- Home -->
-      <section class="min-h-screen px-14 flex flex-col justify-center">
-        <h2 class="text-6xl font-black">
-          Hello, I'm<br /><span class="text-accent"
-            >Dzikri Farrel Ardiansyah</span
-          >
-        </h2>
-        <p class="pt-3 w-[50%] text-gray-300">
-          I'm a passionate developer with experience in android & web
-          development, always eager to learn new technologies and improve my
-          skills.
-        </p>
-        <div
-          class="pt-5 flex gap-3 *:rounded-full *:px-3.5 *:py-2.5 *:border *:transition *:duration-300 *:hover:bg-accent *:hover:text-black"
-        >
-          <button class="bg-white font-semibold text-black hover:scale-105">
-            View Projects
-          </button>
+      <section class="flex min-h-screen flex-col justify-center px-[6%]">
+        <h2 class="pt-5 text-6xl font-black">Hello, I'm<br /><span class="text-accent">Dzikri Farrel Ardiansyah</span></h2>
+        <p class="w-[50%] pt-3 text-[1.222rem] text-gray-300">I'm a passionate developer with experience in android & web development, always eager to learn new technologies and improve my skills.</p>
+        <div class="*:hover:bg-accent flex gap-3 pt-5 *:rounded-full *:border *:px-3.5 *:py-2.5 *:transition *:duration-300 *:hover:text-black *:active:scale-95">
+          <button class="bg-white font-semibold text-black hover:scale-105">View Projects</button>
           <button class="text-white hover:scale-110">Hire Me</button>
         </div>
       </section>
 
       <!-- About -->
-      <section class="min-h-screen flex flex-col items-center">
-        <h2 class="text-4xl font-black">About Me</h2>
-        <div class="flex mt-6 items-start gap-6 lg:w-[60%] md:w-[80%]">
-          <div class="w-[220px] shrink-0">
-            <img class="w-full" src="assets/img/avatar.png" alt="Avatar" />
+      <section class="flex min-h-screen flex-col items-center px-[23%]">
+        <h2 class="pb-8 text-4xl font-black">About Me</h2>
+
+        <div class="grid grid-cols-[320px_1fr] justify-center gap-6">
+          <!-- Avatar -->
+          <div class="h-[320px] w-[320px] shrink-0">
+            <img src="assets/img/avatar.png" alt="Avatar" class="rounded-container h-full w-full" />
           </div>
-          <div class="ps-5">
-            <p
-              class="lg:text-xl md:text-lg rounded-2xl p-5 bg-container border-con_outline border"
-            >
-              Saya adalah individu yang memiliki ketertarikan pada teknologi
-              serta desain. Berpengalaman di bidang administrasi dan IT support,
-              terbiasa bekerja dengan data, sistem, dan visual. Memiliki
-              semangat belajar tinggi, bertanggung jawab, dan mampu bekerja
-              secara mandiri maupun dalam tim.
-            </p>
-            <div
-              class="flex gap-3 mt-5 *:lg:text-xl *:md:text-lg rounded-2xl p-5 bg-container border-con_outline border"
-            >
-              <h3>Interests</h3>
-              <div class="gap-line"></div>
-              <div class="gap-7 flex">
-                <span class="chip">Anime</span>
-                <span class="chip">Coding</span>
-                <span class="chip">Gaming</span>
-                <span class="chip">Design</span>
+
+          <!-- Right Column -->
+          <div class="flex h-[320px] flex-col gap-6">
+            <!-- Bio -->
+            <div class="bg-container border-con_outline rounded-container flex flex-1 items-center overflow-hidden border p-6">
+              <p class="w-full text-[1.45rem] font-light">I am an individual with a passion for technology and design. I have experience in administration and IT support, accustomed to working with data, systems, and visuals. I am highly motivated to learn, responsible, and able to work both independently and in a team.</p>
+            </div>
+            <!-- Interest Bar -->
+            <div class="bg-container border-con_outline rounded-container flex min-w-full items-center border px-5 py-4">
+              <!-- Interest content -->
+              <p class="text-2xl">Interest</p>
+              <div class="bg-con_outline mx-7 h-10 w-0.5"></div>
+              <div class="flex w-full justify-between">
+                <div class="group border-con_outline flex cursor-pointer gap-2 rounded-2xl border bg-[#1A1A1A] px-3 py-3">
+                  <img src="assets/img/anime.svg" alt="" class="transition-all duration-300 ease-in-out group-hover:rotate-360" />
+                  <span>Anime</span>
+                </div>
+                <div class="group border-con_outline flex cursor-pointer gap-2 rounded-2xl border bg-[#1A1A1A] px-3 py-3">
+                  <img src="assets/img/game.svg" alt="" class="transition-all duration-300 ease-in-out group-hover:rotate-360" />
+                  <span>Gaming</span>
+                </div>
+                <div class="group border-con_outline flex cursor-pointer gap-2 rounded-2xl border bg-[#1A1A1A] px-3 py-3">
+                  <img src="assets/img/coding.svg" alt="" class="transition-all duration-300 ease-in-out group-hover:rotate-360" />
+                  <span>Coding</span>
+                </div>
+                <div class="group border-con_outline flex cursor-pointer gap-2 rounded-2xl border bg-[#1A1A1A] px-3 py-3">
+                  <img src="assets/img/design.svg" alt="" class="transition-all duration-300 ease-in-out group-hover:rotate-360" />
+                  <span>Design</span>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div class="col-span-2 flex gap-6">
+            <div class="bg-container border-con_outline rounded-container w-[55%] border p-6">
+              <p class="text-3xl font-bold">Skills</p>
+              <div class="bg-con_outline mt-5.5 h-px w-full"></div>
+            </div>
+            <div class="bg-container border-con_outline rounded-container w-[45%] border p-6">
+              <p class="text-3xl font-bold">Language</p>
+              <div class="bg-con_outline mt-5.5 h-px w-full"></div>
             </div>
           </div>
         </div>
       </section>
+
+      <div class="min-h-screen bg-background flex items-center justify-center p-0 lg:p-12">
+      <div class="max-w-6xl w-full">
+        <div class="flex flex-row items-center gap-12 lg:gap-16">
+          
+          <div class="relative shrink-0">
+            <div class="w-72 h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden shadow-card">
+              <img
+                src="assets/img/avatar.png"
+                alt="Profile"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+
+          <div class="flex-1 h-80 lg:h-96 bg-card rounded-2xl shadow-card border border-border p-8 flex flex-col justify-between">
+            
+            <p class="text-base lg:text-lg leading-relaxed text-foreground/90 font-light line-clamp-2">
+              Saya adalah individu yang memiliki ketertarikan pada
+              <span class="font-semibold text-primary"> teknologi</span> serta
+              <span class="font-semibold text-primary"> desain</span>. Berpengalaman di bidang administrasi dan IT support, terbiasa bekerja dengan data, sistem, dan visual. Memiliki semangat belajar tinggi, bertanggung jawab, dan mampu bekerja secara mandiri maupun dalam tim.
+            </p>
+
+            <div class="flex items-center gap-6">
+              <h3 class="text-lg font-semibold text-foreground">Interest</h3>
+              <div class="flex flex-wrap gap-3">
+                
+                <div class="flex items-center gap-3 px-4 py-2 bg-secondary rounded-full border border-border">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                  <span class="text-sm font-medium text-foreground">Coding</span>
+                </div>
+
+                <div class="flex items-center gap-3 px-4 py-2 bg-secondary rounded-full border border-border">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                  </svg>
+                  <span class="text-sm font-medium text-foreground">Design</span>
+                </div>
+
+                <div class="flex items-center gap-3 px-4 py-2 bg-secondary rounded-full border border-border">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span class="text-sm font-medium text-foreground">IT Support</span>
+                </div>
+
+                <div class="flex items-center gap-3 px-4 py-2 bg-secondary rounded-full border border-border">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span class="text-sm font-medium text-foreground">Admin</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
     </main>
     <footer>
       <p>&copy; 2024 My Sample Page</p>

@@ -10,5 +10,9 @@
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "prettier": {
+    "printWidth": 600,
+    "plugins": ["prettier-plugin-tailwindcss"]
   }
 }
