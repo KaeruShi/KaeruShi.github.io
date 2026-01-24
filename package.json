@@ -3,16 +3,23 @@
     "@tailwindcss/cli": "^4.1.18"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.1.0",
     "prettier": "^3.8.0",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "prettier": {
     "printWidth": 600,
-    "plugins": ["prettier-plugin-tailwindcss"]
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
