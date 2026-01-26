@@ -24,11 +24,20 @@
       >
         <!-- Logo -->
         <div class="flex text-2xl justify-between font-bold items-center">
-          KaeruShi
+          <div class="flex w-full items-center justify-between">
+            KaeruShi
+            <button
+              class="w-fit rounded-full bg-[linear-gradient(to_right,#D86983,#7E57C2)] px-3 py-2
+                leading-none font-bold text-lg transition duration-300 hover:scale-110 active:scale-95
+                lg:hidden"
+            >
+              CV
+            </button>
+          </div>
           <button
             id="hamburger"
-            class="lg:hidden group relative h-15 w-15 cursor-pointer transition-all
-              duration-300 ease-out active:scale-95 *:bg-white"
+            class="lg:hidden group relative h-15 w-15 cursor-pointer transition-all duration-300
+              ease-out active:scale-95 *:bg-white"
           >
             <!-- line 1 -->
             <span
@@ -90,12 +99,12 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex min-h-screen w-full flex-col items-center justify-center px-[6%] lg:items-start"
+        class="flex min-h-screen w-full flex-col  justify-center px-[6%]"
       >
-        <h2 class="pt-5 text-center text-5xl font-black lg:text-left lg:text-6xl">
+        <h2 class="pt-5 text-5xl font-black lg:text-6xl">
           Hello, I'm<br /><span class="text-accent">Dzikri Farrel Ardiansyah</span>
         </h2>
-        <p class="pt-3 text-center text-[1.2rem] text-gray-300 lg:w-[50%] lg:text-left">
+        <p class="pt-3 text-[1.2rem] text-gray-300 lg:w-[50%]">
           I'm a passionate developer with experience in android & web development, always eager to
           learn new technologies and improve my skills.
         </p>
@@ -109,7 +118,12 @@
           >
             View Projects
           </button>
-          <button onclick="window.open('mailto:farel.ardiansyah404@gmail.com', '_blank')" class="text-white hover:scale-110">Hire Me</button>
+          <button
+            onclick="window.open('mailto:farel.ardiansyah404@gmail.com', '_blank')"
+            class="text-white hover:scale-110"
+          >
+            Hire Me
+          </button>
         </div>
       </section>
 
