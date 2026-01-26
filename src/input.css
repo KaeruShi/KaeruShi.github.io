@@ -1,14 +1,13 @@
 @import "tailwindcss";
-@source "../index.html";
-@source "../**/*.{html,js,ts,jsx,tsx}";
 
 @theme {
-    --color-background: #171717;
-    --color-primary: #ffff;
-    --color-accent: #4EFF7E;
-    --color-container: #252525;
-    --color-con_outline: #4D4D4D;
+  --color-background: #171717;
+  --color-primary: #ffff;
+  --color-accent: #4eff7e;
+  --color-container: #252525;
+  --color-con_outline: #4d4d4d;
 
-    --radius-container: 24px;
-    --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --radius-container: 24px;
+  --font-sans: "Geist Fallback", sans-serif;
+  /* --font-sans: "Inter", "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
 }
