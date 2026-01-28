@@ -3,10 +3,10 @@
 # 🌸 kaerushi.github.io
 ### My portfolio website built with Vite, React, and TypeScript.
 
-[![Platform](https://img.shields.io/badge/Android-12%2B-green?style=for-the-badge&logo=android)]()
-[![Sold](https://img.shields.io/badge/Sold-800%2B-orange?style=for-the-badge&logo=shopping-cart&logoColor=white)]()
-[![Telegram](https://img.shields.io/badge/Telegram-Join-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/weeabooify)
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?style=for-the-badge&logo=paypal)](https://paypal.me/kaerushi)
+[![HTML](https://img.shields.io/badge/HTML-Markup-E34F26?style=for-the-badge&logo=html5)]()
+[![Tailwind](https://img.shields.io/badge/TailwindCSS-Styling-38BDF8?style=for-the-badge&logo=tailwindcss)]()
+[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite)]()
+[![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)]()
 
 <img src="assets/resources/preview.png" alt="Preview" width="95%"/>
 
