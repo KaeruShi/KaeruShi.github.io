@@ -10,9 +10,9 @@ export const interest = [
 export const skills = {
   programmingLanguages: [
     {
-      icons: [MyIcons.kotlin, MyIcons.java, MyIcons.xml, MyIcons.html, MyIcons.css, MyIcons.js],
+      icons: [MyIcons.kotlin, MyIcons.java, MyIcons.compose, MyIcons.html, MyIcons.css, MyIcons.js],
       description:
-        "Master Android app development using Kotlin, Java, and XML, as well as web fundamentals with HTML, CSS, and JavaScript. Focus on clean code, a clean UI, and a pleasant user experience.",
+        "Master Android app development using Kotlin, Java, XML and Compose, as well as web fundamentals with HTML, CSS, and JavaScript. Focus on clean code, a clean UI, and a pleasant user experience.",
     },
   ],
   designs: [
@@ -32,10 +32,10 @@ export const skills = {
 };
 
 export const languages = [
-  { name: "Indonesian", icon: MyIcons.indo, level: "95%" },
-  { name: "English", icon: MyIcons.eng, level: "75%" },
-  { name: "Japanese", icon: MyIcons.japan, level: "40%" },
-  { name: "Korean", icon: MyIcons.korean, level: "20%" },
+  { name: "Indonesian", icon: MyIcons.indo, level: "96%" },
+  { name: "English", icon: MyIcons.eng, level: "55%" },
+  { name: "Japanese", icon: MyIcons.japan, level: "30%" },
+  { name: "Korean", icon: MyIcons.korean, level: "10%" },
 ];
 
 export const edu = [
