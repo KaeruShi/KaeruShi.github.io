@@ -96,9 +96,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full flex-col justify-between lg:items-center flex pl-5 pr-2
-        py-1.5 backdrop-blur-xl transition-transform duration-300 will-change-transform lg:flex-row
-        lg:px-10 lg:py-5 ${navHidden ? "-translate-y-full" : "translate-y-0"}`}
+      className={`fixed top-0 z-50 w-full flex-col justify-between md:items-center flex pl-5 pr-2
+        py-1.5 backdrop-blur-xl transition-transform duration-300 will-change-transform md:flex-row
+        md:px-10 md:py-5 ${navHidden ? "-translate-y-full" : "translate-y-0"}`}
     >
       {/* Logo */}
       <div className="flex text-2xl justify-between font-bold items-center">
@@ -107,7 +107,7 @@ export default function Navbar() {
           <button
             className="w-fit rounded-full bg-[linear-gradient(to_right,#D86983,#7E57C2)] px-3 py-2
               leading-none text-lg font-bold transition duration-300 hover:scale-110 active:scale-95
-              lg:hidden"
+              md:hidden"
           >
             CV
           </button>
@@ -117,8 +117,8 @@ export default function Navbar() {
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className={`lg:hidden pr-5 group relative h-15.5 w-16 cursor-pointer transition-all
-            duration-300 ease-out active:scale-95 *:bg-white ${open ? "active" : ""}`}
+          className={`md:hidden pr-5 group relative h-15.5 w-16 cursor-pointer transition-all
+            duration-300 ease-out active:scale-95 *:bg-primary ${open ? "active" : ""}`}
         >
           <span className="absolute left-3.75 top-4.5 h-0.75 w-7.5 rounded-[3px] transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-[.active]:top-[28.5px] group-[.active]:rotate-45" />
           <span className="absolute left-3.75 top-[28.5px] h-0.75 w-7.5 rounded-[3px] transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-[.active]:translate-x-5 group-[.active]:opacity-0" />
@@ -127,10 +127,10 @@ export default function Navbar() {
       </div>
 
       {/* nav-menu-wrapper custom */}
-      <div className="relative lg:static">
+      <div className="relative md:static">
         {/* Mobile dropdown panel */}
         <div
-          className={`lg:hidden absolute w-full mt-4 pe-3
+          className={`md:hidden absolute w-full mt-4 pe-3
             transition-all duration-300 ease-out
             ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}
           `}
@@ -138,7 +138,7 @@ export default function Navbar() {
           <div className="rounded-2xl border border-con_outline bg-container backdrop-blur-xl p-4">
             <ul
               className="[&_a.active]:text-accent flex flex-col gap-4
-                [&_a]:text-[1.2rem] [&_a]:text-white [&_a]:transition-all [&_a]:duration-300
+                [&_a]:text-[1.2rem] [&_a]:text-primary [&_a]:transition-all [&_a]:duration-300
                 [&_a.active]:filter-[drop-shadow(0_0_18px_var(--color-accent))]
                 [&_a.active]:[-webkit-text-stroke:0.5px_currentColor] [&_a:hover]:opacity-60"
             >
@@ -158,10 +158,10 @@ export default function Navbar() {
         </div>
 
         {/* Desktop menu (normal flow) */}
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <ul
             className="[&_a.active]:text-accent gap-4 flex flex-row self-center
-            [&_a]:text-[1.3rem] [&_a]:text-white [&_a]:transition-all [&_a]:duration-300
+            [&_a]:text-[1.3rem] [&_a]:text-primary [&_a]:transition-all [&_a]:duration-300
             [&_a.active]:filter-[drop-shadow(0_0_18px_var(--color-accent))]
             [&_a.active]:[-webkit-text-stroke:0.5px_currentColor] [&_a:hover]:bg-gray-600/40 [&_a.active:hover]:bg-transparent
             [&_a]:px-3 [&_a:hover]:rounded-lg"
@@ -179,8 +179,8 @@ export default function Navbar() {
 
       <button
         className="w-fit rounded-full bg-[linear-gradient(to_right,#D86983,#7E57C2)] px-4 py-3
-          leading-none font-bold transition duration-300 hover:scale-110 active:scale-95 hidden
-          lg:block"
+          leading-none font-bold text-white transition duration-300 hover:scale-110 active:scale-95 hidden
+          md:block"
       >
         Resume
       </button>
