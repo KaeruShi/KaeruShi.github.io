@@ -98,7 +98,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 z-50 w-full flex-col justify-between lg:items-center flex pl-5 pr-2
         py-1.5 backdrop-blur-xl transition-transform duration-300 will-change-transform lg:flex-row
-        lg:px-10 lg:py-4 ${navHidden ? "-translate-y-full" : "translate-y-0"}`}
+        lg:px-10 lg:py-5 ${navHidden ? "-translate-y-full" : "translate-y-0"}`}
     >
       {/* Logo */}
       <div className="flex text-2xl justify-between font-bold items-center">
@@ -161,10 +161,10 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <ul
             className="[&_a.active]:text-accent gap-4 flex flex-row self-center
-            [&_a]:text-[1.2rem] [&_a]:text-white [&_a]:transition-all [&_a]:duration-300
+            [&_a]:text-[1.3rem] [&_a]:text-white [&_a]:transition-all [&_a]:duration-300
             [&_a.active]:filter-[drop-shadow(0_0_18px_var(--color-accent))]
             [&_a.active]:[-webkit-text-stroke:0.5px_currentColor] [&_a:hover]:bg-gray-600/40 [&_a.active:hover]:bg-transparent
-            [&_a]:px-3 [&_a]:py-2 [&_a:hover]:rounded-lg"
+            [&_a]:px-3 [&_a:hover]:rounded-lg"
           >
             {items.map((it) => (
               <li key={it.id}>
