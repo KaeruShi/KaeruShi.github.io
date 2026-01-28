@@ -14,7 +14,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         // Optional: ensures the animation only happens once
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="mb-8 self-center text-4xl font-black"
       >
         About Me
@@ -27,7 +27,7 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9 }}
             // Optional: ensures the animation only happens once
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="h-auto lg:w-[320px] w-[256px] shrink-0"
           >
             <img
@@ -45,7 +45,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
               // Optional: ensures the animation only happens once
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="bg-container rounded-container border-con_outline flex flex-1 items-center
                   justify-center border p-5 lg:p-6 text-xl lg:text-2xl"
             >
@@ -61,7 +61,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               // Optional: ensures the animation only happens once
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="bg-container rounded-container border-con_outline hidden md:flex lg:flex
                   w-fit items-center border py-4 pr-4"
             >
@@ -69,7 +69,7 @@ export default function About() {
               <div className="bg-con_outline mx-6 h-10 w-0.5"></div>
               <ul
                 className="*:border-con_outline flex gap-4 *:flex *:items-center *:gap-2 *:rounded-2xl
-                    *:border *:bg-[#1A1A1A] *:px-4 *:py-3 *:pr-10 *:transition *:duration-300
+                    *:border *:bg-container-secondary *:px-4 *:py-3 *:pr-10 *:transition *:duration-300
                     *:hover:scale-105 *:hover:cursor-pointer *:hover:bg-[#4000]"
               >
                 {interest.map((item) => (
@@ -88,7 +88,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             // Optional: ensures the animation only happens once
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="bg-container border-con_outline rounded-container h-fit flex-1 border p-6"
           >
             <p className="lg:text-3xl text-[1.7rem] font-bold">Skills</p>
@@ -108,7 +108,7 @@ export default function About() {
                           />
                         ))}
                       </div>
-                      <p className="text-[1rem] lg:text-[1.125rem]">{skill.description}</p>
+                      <p className="text-[1rem] md:text-[1.125rem]">{skill.description}</p>
                     </li>
                   ))}
                 </ul>
@@ -123,7 +123,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               // Optional: ensures the animation only happens once
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="bg-container border-con_outline rounded-container flex h-full flex-col border
                   p-6"
             >
@@ -148,7 +148,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               // Optional: ensures the animation only happens once
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="bg-container border-con_outline rounded-container border p-6"
             >
               <ul className="flex flex-col gap-6">
@@ -161,7 +161,7 @@ export default function About() {
                     <p
                       className="
                       font-semibold border-con_outline rounded-2xl md:rounded-container md:px-5
-                      md:py-4 px-3 py-2.5 md:text-2xl border bg-[#121212]
+                      md:py-4 px-3 py-2.5 md:text-2xl border bg-container-secondary
                     "
                     >
                       {item.year}
@@ -177,7 +177,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           // Optional: ensures the animation only happens once
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           id="box-c"
         >
           <div className="bg-container border-con_outline rounded-container flex flex-col border p-6">
@@ -188,8 +188,8 @@ export default function About() {
               </div>
               <p
                 className="
-                  font-semibold border-con_outline rounded-2xl lg:rounded-container lg:px-5
-                  md:py-4 px-3 py-3 md:text-2xl border w-fit self-center mt-4 md:mt-0 lg:mt-0 bg-[#121212]
+                  font-semibold border-con_outline rounded-2xl md:rounded-container lg:px-5
+                  md:py-4 px-3 py-3 md:text-2xl border w-fit self-center mt-4 md:mt-0 lg:mt-0 bg-container-secondary
                 "
               >
                 {workExperience.period}
@@ -204,7 +204,7 @@ export default function About() {
                     {role.responsibilities.map((resp, index) => (
                       <li
                         key={index}
-                        className="flex items-center gap-3 text-[1rem] lg:text-[1.125rem]"
+                        className="flex items-center gap-3 text-[1rem] md:text-[1.125rem]"
                         dangerouslySetInnerHTML={{ __html: MyIcons.checkmarkIcon + resp }}
                       ></li>
                     ))}

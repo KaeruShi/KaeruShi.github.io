@@ -10,7 +10,7 @@ export default function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         // Optional: ensures the animation only happens once
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="mb-16 text-center text-4xl font-black lg:text-left lg:text-5xl"
       >
         My Featured
@@ -22,7 +22,7 @@ export default function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         // Optional: ensures the animation only happens once
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="flex flex-col gap-6 *:transition *:duration-300 *:hover:scale-105 lg:flex-row"
       >
         {projects.map((item) => (
