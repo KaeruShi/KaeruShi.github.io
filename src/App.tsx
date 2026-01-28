@@ -3,6 +3,7 @@ import Home from "./components/section/Home.tsx";
 import About from "./components/section/About.tsx";
 import Projects from "./components/section/Projects.tsx";
 import Contact from "./components/section/Contact.tsx";
+import Footer from "./components/footer.tsx";
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
         <Contact />
       </main>
 
-      <footer className="mt-16 flex items-center justify-center py-4">
-        <p>&copy; 2026 KaeruShi Portofolio Page</p>
-      </footer>
+      <Footer />
     </>
   );
 }
