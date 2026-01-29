@@ -32,7 +32,7 @@ export default function About() {
           >
             <img
               className="rounded-container size-full object-cover"
-              src="src/assets/img/avatar.png"
+              src="./avatar.png"
               alt="Avatar"
             />
           </motion.div>
