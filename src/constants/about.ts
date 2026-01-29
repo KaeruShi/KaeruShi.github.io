@@ -61,7 +61,7 @@ export const workExperience = {
     {
       title: "Staff IT",
       responsibilities: [
-        "Compile and monitor sales reports and inventory recaps periodically to support operational decision-making.Menyusun dan memantau laporan penjualan serta rekap stok barang secara berkala untuk mendukung pengambilan keputusan operasional.",
+        "Compile and monitor sales reports and inventory recaps periodically to support operational decision-making.",
         "Input, update and validate item data in the system so that the data is always accurate and up to date.",
         "Record and control incoming and outgoing goods (receipt, expenditure, returns) and ensure data conformity with physical stock.",
         "Manage warehouse stock, including routine checking, structuring and coordinating stock needs with related teams.",
