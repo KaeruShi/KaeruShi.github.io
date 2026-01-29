@@ -35,7 +35,6 @@ export const projects = [
     link: "https://github.com/KaeruShi/Monetify",
     technologies: [
       { name: "Kotlin", icon: MyIcons.kotlin, class: "w-9" },
-      { name: "Java", icon: MyIcons.java, class: "w-8" },
       { name: "Compose", icon: MyIcons.compose, class: "w-8 mr-1" },
       { name: "Terminal", icon: MyIcons.terminal },
       { name: "Android", icon: MyIcons.android, class: "w-11" },

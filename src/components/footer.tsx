@@ -35,7 +35,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-container mt-16 md:px-7 px-4 py-5 md:py-8 flex justify-between">
+    <footer className="bg-container mt-16 md:px-7 px-4 py-5 md:py-6 flex justify-between">
       <div className="flex items-center">
         <svg
           onClick={() => window.open("https://github.com/KaeruShi", "_blank")}
@@ -51,15 +51,15 @@ export default function Footer() {
       </div>
       <div
         onClick={toggleTheme}
-        className="bg-container-secondary border-con_outline h-10 w-10 p-1 relative flex cursor-pointer items-center justify-center rounded-full border"
+        className="bg-container-secondary border-con_outline w-12 h-12 relative flex cursor-pointer items-center justify-center rounded-full border"
       >
         <DarkIcon
-          className={`h-5 w-5 fill-primary absolute transition-all ${
+          className={`w-full fill-primary absolute transition-all ${
             isDarkMode ? "scale-100 opacity-100" : "scale-0 opacity-0"
           }`}
         />
         <LightIcon
-          className={`h-5 w-5 fill-primary absolute transition-all ${
+          className={`w-full fill-primary absolute transition-all ${
             isDarkMode ? "scale-0 opacity-0" : "scale-100 opacity-100"
           }`}
         />
