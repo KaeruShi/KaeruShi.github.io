@@ -1,10 +1,14 @@
 import { defineConfig } from "vite";
+import { fileURLToPath } from "url"; // Add this
 import path from "path";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
+// Manually define __dirname for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export default defineConfig({
   base: "/",
   resolve: {
