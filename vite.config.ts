@@ -14,5 +14,8 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
+  define: {
+    "process.env": JSON.stringify(process.env),
+  },
   plugins: [react(), svgr(), tailwindcss()],
 });
