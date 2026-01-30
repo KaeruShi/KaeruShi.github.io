@@ -164,7 +164,7 @@ export default function Navbar() {
             [&_a]:text-[1.3rem] [&_a]:text-primary [&_a]:transition-all [&_a]:duration-300
             [&_a.active]:filter-[drop-shadow(0_0_18px_var(--color-accent))]
             [&_a.active]:[-webkit-text-stroke:0.5px_currentColor] [&_a:hover]:bg-gray-600/40 [&_a.active:hover]:bg-transparent
-            [&_a]:px-3 [&_a:hover]:rounded-lg"
+            [&_a]:px-3 [&_a]:py-2 [&_a:hover]:rounded-lg"
           >
             {items.map((it) => (
               <li key={it.id}>
