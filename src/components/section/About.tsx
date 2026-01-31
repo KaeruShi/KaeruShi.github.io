@@ -13,7 +13,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="mb-40 flex w-full scroll-mt-15 flex-col items-center
+      className="mb-40 flex w-full scroll-mt-30 flex-col items-center
         justify-center lg:scroll-mt-30">
       <motion.h2
         initial={{ opacity: 0, y: 70 }}
