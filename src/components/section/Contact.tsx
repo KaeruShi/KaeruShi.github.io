@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="gap-4 md:gap-8 px-8 flex min-h-screen flex-col items-center justify-center"
+      className="flex min-h-screen flex-col items-center justify-center gap-4 px-8 md:gap-8"
     >
       <motion.p
         initial={{ opacity: 0, y: 70 }}
@@ -16,7 +16,7 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         // Optional: ensures the animation only happens once
         viewport={{ once: false }}
-        className="text-4xl md:text-5xl font-semibold"
+        className="text-4xl font-semibold md:text-5xl"
       >
         Get in
         <span className="text-accent"> Touch!</span>
@@ -27,7 +27,7 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         // Optional: ensures the animation only happens once
         viewport={{ once: false }}
-        className="text-xl md:text-2xl mb-5 md:mb-0 text-center"
+        className="mb-5 text-center text-xl md:mb-0 md:text-2xl"
       >
         I’m currently looking for a on-site job or any new opportunities.
         <br />
@@ -40,27 +40,27 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         // Optional: ensures the animation only happens once
         viewport={{ once: false }}
-        className="gap-5 *:w-15 *:bg-primary *:p-2 *:hover:-translate-y-2 *:lg:w-20 *:lg:p-4 flex *:cursor-pointer *:rounded-full *:transition *:duration-200"
+        className="flex gap-5 *:w-15 *:cursor-pointer *:rounded-full *:bg-primary *:p-2 *:transition *:duration-200 *:hover:-translate-y-2 *:lg:w-20 *:lg:p-4"
       >
         <InstagramIcon
           onClick={() =>
             window.open("https://instagram.com/kaerushi_", "_blank")
           }
-          className="fill-secondary h-auto"
+          className="h-auto fill-secondary"
         />
         <WhatsappIcon
           onClick={() => window.open("https://wa.me/62895369167497", "_blank")}
-          className="fill-secondary h-auto"
+          className="h-auto fill-secondary"
         />
         <FacebookIcon
           onClick={() =>
             window.open("https://facebook.com/kaerushi404", "_blank")
           }
-          className="fill-secondary h-auto"
+          className="h-auto fill-secondary"
         />
         <TelegramIcon
           onClick={() => window.open("https://t.me/kaerushi", "_blank")}
-          className="fill-secondary h-auto"
+          className="h-auto fill-secondary"
         />
       </motion.div>
     </section>

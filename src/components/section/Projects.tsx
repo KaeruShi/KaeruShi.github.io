@@ -4,7 +4,10 @@ import ProjectCard from "../ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="flex scroll-mt-30 flex-col px-8 md:px-14 lg:px-30">
+    <section
+      id="projects"
+      className="flex scroll-mt-30 flex-col px-8 md:px-14 lg:px-30"
+    >
       <motion.p
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}

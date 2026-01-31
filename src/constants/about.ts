@@ -10,7 +10,14 @@ export const interest = [
 export const skills = {
   programmingLanguages: [
     {
-      icons: [MyIcons.kotlin, MyIcons.java, MyIcons.compose, MyIcons.html, MyIcons.css, MyIcons.js],
+      icons: [
+        MyIcons.kotlin,
+        MyIcons.java,
+        MyIcons.compose,
+        MyIcons.html,
+        MyIcons.css,
+        MyIcons.js,
+      ],
       description:
         "Master Android app development using Kotlin, Java, XML and Compose, as well as web fundamentals with HTML, CSS, and JavaScript. Focus on clean code, a clean UI, and a pleasant user experience.",
     },
@@ -41,7 +48,11 @@ export const languages = [
 export const edu = [
   { school: "MI AL FALAH", grade: "Elementary School", year: "2015" },
   { school: "MTsN 2 BREBES", grade: "Junior High School", year: "2018" },
-  { school: "SMK N 1 BREBES", grade: "Teknik Komputer Jaringan", year: "2021" },
+  {
+    school: "SMK N 1 BREBES",
+    grade: "Computer and Network Engineering",
+    year: "2021",
+  },
 ];
 
 export const workExperience = {

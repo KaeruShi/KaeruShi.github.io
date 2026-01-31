@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="lg:px-[12%] flex min-h-screen w-full flex-col justify-center px-[6%]"
+      className="flex min-h-screen w-full flex-col justify-center px-[6%] lg:px-[12%]"
     >
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
@@ -24,7 +24,7 @@ export default function Home() {
         transition={{ duration: 0.7 }}
         // Optional: ensures the animation only happens once
         viewport={{ once: false }}
-        className="pt-3 lg:mt-5 :mb-6 md:text-2xl text-primary/60 lg:w-[60%] text-[1.2rem]"
+        className=":mb-6 pt-3 text-[1.2rem] text-primary/60 md:text-2xl lg:mt-5 lg:w-[60%]"
       >
         I'm a passionate developer with experience in android & web development,
         always eager to learn new technologies and improve my skills.
@@ -35,7 +35,7 @@ export default function Home() {
         transition={{ duration: 0.9 }}
         // Optional: ensures the animation only happens once
         viewport={{ once: false }}
-        className="*:hover:bg-accent gap-3 pt-5 *:px-3.5 *:py-2.5 *:md:text-xl *:md:px-6 *:md:py-4.5 *:hover:text-black flex *:rounded-full *:border *:transition *:duration-300 *:active:scale-95"
+        className="flex gap-3 pt-5 *:rounded-full *:border *:px-3.5 *:py-2.5 *:transition *:duration-300 *:hover:bg-accent *:hover:text-black *:active:scale-95 *:md:px-6 *:md:py-4.5 *:md:text-xl"
       >
         <button
           onClick={() => (window.location.href = "#projects")}

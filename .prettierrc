@@ -1,4 +1,11 @@
 {
-  "tailwindStylesheet": "./src/App.css",
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "tailwindStylesheet": "./src/index.css",
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-classnames",
+    "prettier-plugin-merge"
+  ],
+  "proseWrap": "always",
+  "bracketSameLine": true,
+  "printWidth": 80
 }
