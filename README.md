@@ -8,7 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite)]()
 [![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)]()
 
-<img src="assets/resources/preview.png" alt="Preview" width="95%"/>
+<img src="public/screenshoot.png" alt="Preview" width="100%"/>
 
 </div>
 
@@ -63,8 +63,9 @@ Notes:
 - Environment variables in `vite.config.ts` are defined with `define: { "process.env": JSON.stringify(process.env) }`. For local env variables, prefer `import.meta.env` with Vite conventions.
 
 ## 🎯 Roadmap
+- [x] Polish background visuals
+- [ ] Better light mode
 - [ ] Multi-language support (English + Indonesian)
-- [ ] Polish background visuals
 - [ ] Add dedicated Project detail pages 
 
 ## ⭐ Support
